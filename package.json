@@ -1,0 +1,15 @@
+{
+  "name": "linguabrief",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimalist open-source Telegram group digest & 16-language instant translator on Cloudflare Workers + D1",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute lingua_brief_db --remote --file=./migrations/0001_init.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
